@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Hello. on Owen RL Smith</title>
+    <link>https://orls.co.uk/</link>
+    <description>Recent content in Hello. on Owen RL Smith</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-gb</language>
+    <lastBuildDate>Fri, 16 Aug 2019 08:02:03 +0100</lastBuildDate>
+    
+	<atom:link href="https://orls.co.uk/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Curriculum Vitae</title>
+      <link>https://orls.co.uk/cv/</link>
+      <pubDate>Fri, 16 Aug 2019 08:02:03 +0100</pubDate>
+      
+      <guid>https://orls.co.uk/cv/</guid>
+      <description>Also available as PDF
+ Full Name: Owen RL Smith Contact: owen@orls.co.uk (Further details available upon request) Location: London, UK Nationality: British  Core Skills  Strong in modern PHP (including some internals/extensions familiarity), Javascript (Node), Python. Knowledgeable in Go, C and Bash. Familiar with Ruby and Java. Flirtations with Scala and Rust. Front end development: Javascript, React, HTML, CSS. Unix/Linux use and administration. Development of multi-component service architectures (using REST, message queues, various RPC flavours, GraphQL) Relational DBs: MySQL, PostgreSQL, some PL/pgSQL exposure.</description>
+    </item>
+    
+  </channel>
+</rss>

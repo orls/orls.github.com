@@ -1,0 +1,156 @@
+/*
+ *  __                  __
+ * /\ \                /\ \
+ * \ \ \___   __  __   \_\ \     __
+ *  \ \  _ `\/\ \/\ \  /'_` \  /'__`\
+ *   \ \ \ \ \ \ \_\ \/\ \_\ \/\  __/
+ *    \ \_\ \_\/`____ \ \___,_\ \____\
+ *     \/_/\/_/`/___/> \/__,_ /\/____/
+ *                /\___/
+ *                \/__/
+ *
+ * Designed, built, and released under MIT license by @mdo. Learn more at
+ * https://github.com/poole/hyde.
+ */
+
+
+/*
+ * Contents
+ *
+ * Global resets
+ * Sidebar
+ * main content
+ */
+
+
+/*
+ * Global resets
+ *
+ * Update the foundational and global aspects of the page.
+ */
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,700,400i,700i|Fira+Code&display=swap');
+
+html {
+  font-family: 'PT Serif', serif;
+  font-size: 16px;
+  line-height: 1.5;
+  --rhythm-len: 1.5rem; /* 24px @ 16px font, 32 px @ 20px font */
+  --accent-dark: #1d8486;
+  --accent-light: #24a2a5;
+}
+@media (min-width: 58em) {
+  html {
+    font-size: 20px;
+  }
+}
+
+/*
+ * Positioning of main and sidebar:
+ * - flex rules everything around me
+ * - sidebar starts off as a head./full width, moves to side on larger screens
+ */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  min-width: 100vw;
+  line-height: 1.5rem;
+}
+@media (min-width: 48em) {
+  body {
+    flex-direction: row;
+  }
+}
+
+/*
+ * Sidebar
+ *
+ * Flexible banner for housing site name, intro, and "footer" content. Starts
+ * out above content in mobile and later moves to the side with wider viewports.
+ */
+
+.sidebar {
+  order: -1;
+  text-align: center;
+  padding: 0 2rem;
+  color: #adadad;
+  background-color: #202020;
+}
+@media (min-width: 48em) {
+  .sidebar {
+    flex: 0 0 18rem;
+    text-align: right;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0.9rem;
+  }
+}
+
+/* Sidebar links */
+.sidebar a {
+  color: #cfcfcf;
+}
+.sidebar h1 a {
+  color: inherit;
+}
+
+.sidebar h1 {
+  color: var(--accent-light);
+}
+
+.sidebar nav {
+  flex-grow: 1; /* Fill remaining space, to push the copyright down. */
+}
+
+/* Sidebar nav */
+/* `.sidebar-nav` is the ul, inside `.sidebar nav`. TODO: Fix this naming mess. */
+.sidebar-nav {
+  padding-left: 0;
+  list-style: none;
+}
+.sidebar-nav-item {
+  display: block;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+.content {
+  max-width: 38rem;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  margin-left:  auto;
+  margin-right: auto;
+}
+
+@media (min-width: 48em) {
+  .content {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+
+.post-date {
+  font-style: italic;
+  font-size: 0.7rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+}
+
+.footnotes {
+  font-size: 0.8rem;
+}
+
+/*
+Various adjustments/customizations needed in footnotes content, due to the
+smaller font size ;(
+*/
+
+.footnotes ol {
+  padding-top: 0.35rem;
+  padding-bottom: 1.15rem;
+}

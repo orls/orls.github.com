@@ -1,0 +1,73 @@
+.sidebar {
+  display: none !important;
+}
+
+html {
+  font-family: 'PT Serif', serif;
+  font-size: 12px;
+  line-height: 1.5;
+  --rhythm-len: 1.5rem; /* 24px @ 16px font, 32 px @ 20px font */
+  --accent-dark: black;
+  --accent-light: black;
+}
+
+dt {
+  width: 6rem;
+  text-align: left;
+  font-style: initial;
+}
+
+body {
+  display: inherit;
+}
+
+@page {
+  margin-left: 2cm;
+}
+
+@page :first {
+  margin-top: 1cm;
+}
+
+h4, h5, h6 {
+  font-weight: bold;
+}
+
+.content {
+  margin: 0 auto;
+  width: 100%;
+  float: none;
+  display: block;
+  padding-left:  1rem;
+  padding-right: 1rem;
+  max-width: initial;
+}
+
+.noprint,
+.footer,
+.footnote-return
+{
+  display: none;
+}
+
+/* Undo all my lovely vert-rhythm stuff ;( */
+.footnotes ol,
+h1,
+h2,
+h3,
+h4, h5, h6,
+p, time,
+.post-date,
+:not(li)>ul, :not(li)>ol,
+dl {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 1rem;
+}
+
+/*and reset line-height to be more acceptable*/
+h1,
+h2 {
+  line-height: 1.5em;
+}
+
